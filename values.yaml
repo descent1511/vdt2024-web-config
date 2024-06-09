@@ -73,10 +73,10 @@ resources: {}
   #   cpu: 100m
   #   memory: 128Mi
 
-# livenessProbe:
-#   httpGet:
-#     path: /
-#     port: 8080
+livenessProbe:
+  httpGet:
+    path: /
+    port: 80
 # readinessProbe:
 #   httpGet:
 #     path: /
