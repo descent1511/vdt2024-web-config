@@ -44,7 +44,7 @@ service:
   type: NodePort
   nodePort: 30002
   port: 8080
-
+  portName: web
 
 ingress:
   enabled: false
