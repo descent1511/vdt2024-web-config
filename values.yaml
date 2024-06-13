@@ -53,14 +53,14 @@ ingress:
     kubernetes.io/ingress.class: nginx
     nginx.ingress.kubernetes.io/rewrite-target: /
   hosts:
-    - host: vdt2024.vn
+    - host: vdtweb.vn
       paths:
-        - path: /web
+        - path: /
           pathType: Prefix
   tls:
-    - secretName: my-tls-secret
+    - secretName: web-tls-secret
       hosts:
-        - vdt2024.vn
+        - vdtweb.vn
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
